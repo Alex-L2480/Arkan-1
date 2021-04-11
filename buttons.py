@@ -11,10 +11,10 @@ sc = pygame.display.set_mode((W,H))
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
-img1 = pygame.image.load('images/m1.png')
-img2 = pygame.image.load('images/m2.png')
-img11 = pygame.image.load('images/m3.png')
-img22 = pygame.image.load('images/m4.png')
+img1 = pygame.image.load('images\\m1.png')
+img2 = pygame.image.load('images\\m2.png')
+img11 = pygame.image.load('images\\m3.png')
+img22 = pygame.image.load('images\\m4.png')
 
 class Button:
     def __init__ (self, x, y, surf, image, image2):
