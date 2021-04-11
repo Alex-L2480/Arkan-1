@@ -11,10 +11,10 @@ sc = pygame.display.set_mode((W,H))
 pygame.display.set_caption("My Game")
 clock = pygame.time.Clock()
 
-img1 = pygame.image.load('images\\m1.png')
-img2 = pygame.image.load('images\\m2.png')
-img11 = pygame.image.load('images\\m3.png')
-img22 = pygame.image.load('images\\m4.png')
+img1 = pygame.image.load('images/m1.png')
+img2 = pygame.image.load('images/m2.png')
+img11 = pygame.image.load('images/m3.png')
+img22 = pygame.image.load('images/m4.png')
 
 class Button:
     def __init__ (self, x, y, surf, image, image2):
@@ -33,7 +33,7 @@ class Button:
         if self.paddle.left < mouse[0] < self.paddle.right and self.paddle.bottom > mouse[1] > self.paddle.top:
             self.surf.blit(self.image2,(self.paddle.x,self.paddle.y))
             if click[0] == 1 and self.paddle.top == 200:
-                from perepis import run_game
+                from main import run_game
                 run_game()    
             if click[0] == 1 and self.paddle.top == 450:
                 quit()                                     
